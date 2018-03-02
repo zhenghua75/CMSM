@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<AutoUpdater>
+	<Description>CMSM autoUpdate</Description>
+	<Updater>
+		<Url>http://worksbread.uicp.cn:8077/CMSM/</Url>
+		<LastUpdateTime>2009-03-16</LastUpdateTime>
+	</Updater>
+	<Application applicationId = "CMSM">
+		<EntryPoint>CMSM.exe</EntryPoint>
+		<Location>.</Location>
+		<Version>1.0.3375.22229</Version>
+	</Application>
+	<Files>
+		<File Ver="1.0.3375.22229" Name= "ICSharpCode.SharpZipLib.dll" />
+		<File Ver="1.0.3375.22229" Name= "Interop.Excel.dll" />
+		<File Ver="1.0.3375.22229" Name= "Interop.Microsoft.Office.Core.dll" />
+		<File Ver="1.0.3375.22229" Name= "Interop.VBIDE.dll" />
+		<File Ver="1.0.3375.22229" Name= "Gedee.dll" />
+		<File Ver="1.0.3375.22229" Name= "UserData.dll" />
+		<File Ver="1.0.3375.22229" Name= "CMSMData.dll" />
+		<File Ver="1.0.3375.22229" Name= "mwrf32.dll" />
+		<File Ver="1.0.3375.22229" Name= "Interop.CardCMSM.dll" />
+		<File Ver="1.0.3375.22229" Name= "Interop.Reg.dll" />
+		<File Ver="1.0.3375.22229" Name= "CardCommon.dll" />
+		<File Ver="1.0.3375.22229" Name= "CMSM.exe" />
+	</Files>
+</AutoUpdater>

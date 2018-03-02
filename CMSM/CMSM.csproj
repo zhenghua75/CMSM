@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProjectGuid>{4EB7ABE7-EEA4-4145-A4FF-2EFF419E6A45}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>image\Stardock Theme Manager.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>CMSM</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CMSM</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>CMSM.CMSMMain</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\CMSM.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\CMSM.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardCommon\CardCommon.csproj">
+      <Name>CardCommon</Name>
+      <Project>{51EC3AF0-388C-4682-8F31-7406A662233B}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\CMSMData\CMSMData.csproj">
+      <Project>{41a53f04-ab2b-4bed-8782-21e2ecd62453}</Project>
+      <Name>CMSMData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Print\Print.csproj">
+      <Name>Print</Name>
+      <Project>{4B7C314E-F5B7-404C-BDD5-6F4E6DEFCA97}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="DevExpress.Data">
+      <Name>DevExpress.Data</Name>
+      <HintPath>C:\Program Files\Common Files\DevExpress\.NET\DevExpress.Data.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.Utils">
+      <Name>DevExpress.Utils</Name>
+      <HintPath>C:\Program Files\Common Files\DevExpress\.NET\DevExpress.Utils.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors">
+      <Name>DevExpress.XtraEditors</Name>
+      <HintPath>C:\Program Files\Common Files\DevExpress\.NET\DevExpress.XtraEditors.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar">
+      <Name>DevExpress.XtraNavBar</Name>
+      <HintPath>C:\Program Files\Common Files\DevExpress\.NET\DevExpress.XtraNavBar.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting">
+      <Name>DevExpress.XtraPrinting</Name>
+      <HintPath>C:\Program Files\Common Files\DevExpress\.NET\DevExpress.XtraPrinting.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports">
+      <Name>DevExpress.XtraReports</Name>
+      <HintPath>C:\Program Files\Common Files\DevExpress\.NET\DevExpress.XtraReports.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Gedee">
+      <HintPath>..\CardCommon\ExtraC\Gedee.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <Name>Interop.Excel</Name>
+      <HintPath>..\dll\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core">
+      <Name>Interop.Microsoft.Office.Core</Name>
+      <HintPath>bin\Debug\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="UserData, Version=1.0.5634.30104, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CardCommon\ExtraC\UserData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppUpdater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\CashDrawer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmAfterStartDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmAssAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmAssCons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmAssConsRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmAssFillRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmAssInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmAssLargess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmAssMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmAssUpLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmBespeakLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmBusiIncomeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmCardAgain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmCardChargeUnion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmCardChargeUnionRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmCardLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\FrmCardRelease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmChangeCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmConsItemQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmConsQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmDataManuUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmDataManuUpdate_His.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmDataToHis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmDeptSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmEmpAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmEmpInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmFillError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmFillFeeByCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmFillQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmIntegralChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmLargQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmMainDataDownLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmModPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmNonAssConsRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmOper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmOperFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmOperQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmProductionInStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmRepeatPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmRetailCons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmRollAssInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmRollCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmSaleBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmSaleCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmSaleTop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmSignOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmSignSpec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmSpecialCons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\frmSysSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMApp\RawPrinterHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CMSMMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log\CMSMLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Win32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XmlFiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="CMSMApp\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmAfterStartDown.resx">
+      <DependentUpon>frmAfterStartDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmAssAdd.resx">
+      <DependentUpon>frmAssAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmAssCons.resx">
+      <DependentUpon>frmAssCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmAssConsRemove.resx">
+      <DependentUpon>frmAssConsRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmAssFillRemove.resx">
+      <DependentUpon>frmAssFillRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmAssInfo.resx">
+      <DependentUpon>frmAssInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmAssLargess.resx">
+      <DependentUpon>frmAssLargess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmAssMod.resx">
+      <DependentUpon>frmAssMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmAssUpLevel.resx">
+      <DependentUpon>frmAssUpLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmBespeakLog.resx">
+      <DependentUpon>frmBespeakLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmBusiIncomeReport.resx">
+      <DependentUpon>frmBusiIncomeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmCardAgain.resx">
+      <DependentUpon>frmCardAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmCardChargeUnion.resx">
+      <DependentUpon>frmCardChargeUnion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmCardChargeUnionRemove.resx">
+      <DependentUpon>frmCardChargeUnionRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmCardLose.resx">
+      <DependentUpon>frmCardLose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\FrmCardRelease.resx">
+      <DependentUpon>FrmCardRelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmChangeCheck.resx">
+      <DependentUpon>frmChangeCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmConsItemQuery.resx">
+      <DependentUpon>frmConsItemQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmConsQuery.resx">
+      <DependentUpon>frmConsQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmDataManuUpdate.resx">
+      <DependentUpon>frmDataManuUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmDataManuUpdate_His.resx">
+      <DependentUpon>frmDataManuUpdate_His.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmDataToHis.resx">
+      <DependentUpon>frmDataToHis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmDeptSet.resx">
+      <DependentUpon>frmDeptSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmEmpAdd.resx">
+      <DependentUpon>frmEmpAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmEmpInfo.resx">
+      <DependentUpon>frmEmpInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmFillError.resx">
+      <DependentUpon>frmFillError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmFillFeeByCard.resx">
+      <DependentUpon>frmFillFeeByCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmFillQuery.resx">
+      <DependentUpon>frmFillQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmGoods.resx">
+      <DependentUpon>frmGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmInputBox.resx">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmIntegralChange.resx">
+      <DependentUpon>frmIntegralChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmLargQuery.resx">
+      <DependentUpon>frmLargQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmMainDataDownLoad.resx">
+      <DependentUpon>frmMainDataDownLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmModPwd.resx">
+      <DependentUpon>frmModPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmNonAssConsRemove.resx">
+      <DependentUpon>frmNonAssConsRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmOper.resx">
+      <DependentUpon>frmOper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmOperFirst.resx">
+      <DependentUpon>frmOperFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmOperQuery.resx">
+      <DependentUpon>frmOperQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmProductionInStorage.resx">
+      <DependentUpon>frmProductionInStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmRepeatPrint.resx">
+      <DependentUpon>frmRepeatPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmRetailCons.resx">
+      <DependentUpon>frmRetailCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmRollAssInfo.resx">
+      <DependentUpon>frmRollAssInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmRollCard.resx">
+      <DependentUpon>frmRollCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmSaleBalance.resx">
+      <DependentUpon>frmSaleBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmSaleCheck.resx">
+      <DependentUpon>frmSaleCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmSaleTop.resx">
+      <DependentUpon>frmSaleTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmSignIn.resx">
+      <DependentUpon>frmSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmSignOut.resx">
+      <DependentUpon>frmSignOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmSignSpec.resx">
+      <DependentUpon>frmSignSpec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmSpecialCons.resx">
+      <DependentUpon>frmSpecialCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMApp\frmSysSet.resx">
+      <DependentUpon>frmSysSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMMain.resx">
+      <DependentUpon>CMSMMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="image\" />
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="ConsItem" targetNamespace="http://www.tempuri.org/ConsItem.xsd" xmlns:mstns="http://www.tempuri.org/ConsItem.xsd" xmlns="http://www.tempuri.org/ConsItem.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="ConsItem" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tbConsItem">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="vcGoodsName" type="xs:string" minOccurs="0" />
+              <xs:element name="nPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="iCount" type="xs:int" minOccurs="0" />
+              <xs:element name="nFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="nTRate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="nTFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="nPay" type="xs:decimal" minOccurs="0" />
+              <xs:element name="nBalance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="vcCommName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<AutoUpdater>
+	<Description>CMSM autoUpdate</Description>
+	<Updater>
+		<Url>http://10.10.10.203:8077/Bread/</Url>
+		<LastUpdateTime>2015-01-26</LastUpdateTime>
+	</Updater>
+	<Application applicationId = "CMSM">
+		<EntryPoint>CMSM.exe</EntryPoint>
+		<Location>.</Location>
+		<Version>1.0.3375.22229</Version>
+	</Application>
+	<Files>
+		<File Ver="1.0.3375.22253" Name= "CMSMData.dll" />
+		<File Ver="1.0.3375.22229" Name= "mwrf32.dll" />
+		<File Ver="1.0.3375.22229" Name= "CardCommon.dll" />
+		<File Ver="1.0.3375.22253" Name= "CMSM.exe" />
+                <File Ver="1.0.3375.22229" Name= "AutoUpdate.exe" />
+                <File Ver="1.0.3375.22231" Name= "AMSSync.exe" />
+		<File Ver="1.0.3375.22229" Name= "Card32.dll" />
+		<File Ver="1.0.3375.22244" Name= "Print.dll" />
+                <File Ver="1.0.3375.22252" Name= "BusiIncomeModel.xls" />
+	</Files>
+</AutoUpdater>

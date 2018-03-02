@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsincome" targetNamespace="http://www.tempuri.org/dsincome.xsd" xmlns:mstns="http://www.tempuri.org/dsincome.xsd" xmlns="http://www.tempuri.org/dsincome.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsincome" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="新增会员数" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="挂失会员数" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="充值次数" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="充值金额" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="银联卡充值" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="会员消费次数" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="会员消费金额" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="零售次数" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="零售金额" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="现金总额" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
